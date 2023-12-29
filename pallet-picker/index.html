@@ -7,7 +7,48 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <main>
+        <header>
+          <h1>Pallet Picker</h1>
+        </header>
+        <div id="pallet">
+          <form id="palletForm">
+            <h2>Add a Palette</h2>
+            <div>
+              <label for="title">Paletter Tittle:</label>
+              <input type="text" name="title" required>
+            </div>
+            <div>
+              <label for="colors">Color #1</label>
+              <input type="color" name="colors" id="pallet_Color" required>
+            </div>
+            <div>
+              <label for="colors">Color #2</label>
+              <input type="color" name="colors" id="pallet_Color2" required>
+            </div>
+            <div>
+              <label for="colors">Color #3</label>
+              <input type="color" name="colors" id="pallet_Color3" required>
+            </div>
+            <div>
+              <p id="temperature">Temperature</p>
+              <input type="radio" id="warm" name="temperature" value="Warm">
+              <label for="warm">Warm</label>
+              <input type="radio" id="Neutral" name="temperature" value="Neutral">
+              <label for="warm">Neutral</label>
+              <input type="radio" id="cool" name="temperature" value="Cool">
+              <label for="cool">Cool</label>
+            </div>
+            <button>Create the Palette</button>
+          </form>
+        </div>
+      </main>
+      <div>
+        <ul id="formInputs">
+        </ul>
+      </div>
+    </div>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>
