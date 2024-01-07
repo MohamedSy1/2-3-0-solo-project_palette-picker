@@ -54,4 +54,7 @@ ul > li {
     justify-content: center;
     align-items: center;
     width: 100px;
+    border: solid;
+    padding-left: 3rem;
 }
+
