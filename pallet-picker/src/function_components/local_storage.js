@@ -1,6 +1,5 @@
 import palletData from "../default-pallet.json"
 
-console.log([...palletData])
 // Generic Helper Functions
 export const setLocalStorageKey = (key, value) => {
     localStorage.setItem(key, JSON.stringify(value))

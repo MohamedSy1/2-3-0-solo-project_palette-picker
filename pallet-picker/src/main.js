@@ -16,13 +16,10 @@ const handleSubmit = (event) => {
         uuid: uuid(),
     }
 
-    
     if (!(formObj.temperature) || !(formObj.title)) {
         console.log(formObj)
         return 
     }
-
-    console.log(formObj.temperature)
 
     const ul = document.querySelector('ul')
 
@@ -73,8 +70,6 @@ const renderPallets = () => {
         li.appendChild(p)
         ul.append(li)
     })
-
-
 }
 
 const main = () => {
